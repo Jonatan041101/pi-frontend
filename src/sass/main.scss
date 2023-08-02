@@ -1,13 +1,14 @@
 @import './mixins/mixin.scss', './variables/variables.scss',
-  './reset/reset.scss';
+  './reset/reset.scss', './components/header.scss', './components/button.scss';
 .body {
   display: flex;
-  font-size: var(--font-montserrat);
+  font-family: var(--font-montserrat);
   @include flex(column, nowrap, flex-start, center, 1em);
   background: $color-main;
+  background: #fff;
 }
 .main {
   height: 100%;
   width: 100%;
-  @include flex(row, nowrap, flex-start, flex-start, 0);
+  @include flex(row, nowrap, center, flex-start, 0);
 }

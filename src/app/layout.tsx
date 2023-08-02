@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${nunito.variable} body`}>{children}</body>
+      <body className={`${montserrat.variable} body ${nunito.variable} body`}>{children}</body>
     </html>
   )
 }

@@ -202,15 +202,47 @@ button {
   cursor: pointer;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 5em;
+  color: #212b36;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.header__nav {
+  width: 100%;
+  max-width: 1100px;
+}
+.header__h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button {
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+.button__orange {
+  background: #e06925;
+}
 .body {
   display: flex;
-  font-size: var(--font-montserrat);
+  font-family: var(--font-montserrat);
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
   gap: 1em;
   background: #121b22;
+  background: #fff;
 }
 
 .main {
@@ -218,7 +250,7 @@ button {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   gap: 0;
 }
