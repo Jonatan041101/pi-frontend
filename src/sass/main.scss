@@ -1,5 +1,6 @@
 @import './mixins/mixin.scss', './variables/variables.scss',
-  './reset/reset.scss', './components/header.scss', './components/button.scss';
+  './reset/reset.scss', './components/header.scss', './components/button.scss',
+  './components/description.scss';
 .body {
   display: flex;
   font-family: var(--font-montserrat);
@@ -10,7 +11,7 @@
 .main {
   height: 100%;
   width: 100%;
-  @include flex(row, nowrap, center, flex-start, 0);
+  @include flex(column, nowrap, space-between, center, 0);
   &__section {
     width: 100%;
     max-width: $max-width-section;
@@ -35,5 +36,11 @@
     color: $color-gray-text;
     font-weight: 600;
     width: 16em;
+  }
+  &__description {
+    width: 100%;
+    padding: 0 0 3.8em 0;
+    max-width: $max-width-section;
+    @include flex(row, nowrap, space-between, center, 0);
   }
 }

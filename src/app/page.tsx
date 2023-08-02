@@ -4,6 +4,8 @@ import Header from './components/Header';
 import { imageHome } from '@/utils/image';
 import Button from '@/atoms/Button';
 import TextInit from './components/TextInit';
+import { description } from '@/utils/description';
+import Description from './components/Description';
 
 export default function Home() {
   return (
@@ -21,6 +23,11 @@ export default function Home() {
           height={600}
           className="main__image"
         />
+      </section>
+      <section className="main__description">
+        {description.map(({ description, id, image }) => (
+          <Description image={image} text={description} key={id} />
+        ))}
       </section>
     </main>
   );

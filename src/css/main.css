@@ -269,6 +269,32 @@ button {
   width: 1.3em;
 }
 
+.description {
+  box-shadow: 0 4px 27px 0 rgba(0, 0, 0, 0.1098039216);
+  width: 8em;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.4em;
+}
+.description:hover {
+  box-shadow: 0 4px 27px 0 rgba(0, 0, 0, 0.2078431373);
+}
+.description__image {
+  width: 4em;
+  height: 4.5em;
+}
+.description__span {
+  text-align: center;
+  color: #565656;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
 .body {
   display: flex;
   font-family: var(--font-montserrat);
@@ -285,9 +311,9 @@ button {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: flex-start;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 0;
 }
 .main__section {
@@ -319,6 +345,16 @@ button {
   color: #565656;
   font-weight: 600;
   width: 16em;
+}
+.main__description {
+  width: 100%;
+  padding: 0 0 3.8em 0;
+  max-width: 1050px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
