@@ -1,8 +1,10 @@
 import './globals.css'
+import '@/css/main.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat,Nunito } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] ,style:'normal',variable:'--font-montserrat'})
+const nunito = Nunito({ subsets: ['latin'],style:'normal',variable:'--font-nunito' })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montserrat.variable} ${nunito.variable} body`}>{children}</body>
     </html>
   )
 }
