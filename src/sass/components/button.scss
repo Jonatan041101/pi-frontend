@@ -1,16 +1,34 @@
 .button {
   color: #fff;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border-radius: 0.5em;
+  transition: 0.5s ease;
+  &:hover &__i {
+    transform: translateX(0.5em);
+  }
   &__action {
+    @include flex(row, nowrap, center, center, 0.5em);
   }
   &__text {
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
   &__orange {
+    font-size: 1.2em;
     background: $color-orange;
+    &:hover {
+      background: $color-orange-hover;
+    }
   }
   &__blue {
+    background: $color-blue;
+    font-size: 1.7em;
+    &:hover {
+      background: $color-blue-hover;
+    }
   }
   &__i {
+    transition: 0.5s ease;
+    width: 1.3em;
   }
 }

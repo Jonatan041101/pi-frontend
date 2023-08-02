@@ -2,17 +2,18 @@
   position: fixed;
   top: 0;
   left: 0;
-  min-height: 5em;
+  min-height: 8em;
   color: $color-blue;
   width: 100%;
   @include flex(row, nowrap, center, center, 0);
   &__nav {
     width: 100%;
     max-width: $max-width;
+    @include flex(row, nowrap, space-between, center, 0);
   }
   &__h2 {
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
   }
 }

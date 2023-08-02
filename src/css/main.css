@@ -206,7 +206,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  min-height: 5em;
+  min-height: 8em;
   color: #212b36;
   width: 100%;
   display: flex;
@@ -218,21 +218,57 @@ button {
 .header__nav {
   width: 100%;
   max-width: 1100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
 }
 .header__h2 {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
 .button {
   color: #fff;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border-radius: 0.5em;
+  transition: 0.5s ease;
+}
+.button:hover .button__i {
+  transform: translateX(0.5em);
+}
+.button__action {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.button__text {
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 .button__orange {
+  font-size: 1.2em;
   background: #e06925;
 }
+.button__orange:hover {
+  background: #b0511a;
+}
+.button__blue {
+  background: #212b36;
+  font-size: 1.7em;
+}
+.button__blue:hover {
+  background: #304151;
+}
+.button__i {
+  transition: 0.5s ease;
+  width: 1.3em;
+}
+
 .body {
   display: flex;
   font-family: var(--font-montserrat);
@@ -253,6 +289,36 @@ button {
   justify-content: center;
   align-items: flex-start;
   gap: 0;
+}
+.main__section {
+  width: 100%;
+  max-width: 1050px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.main__title {
+  width: 20em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+.main__h1 {
+  font-size: 2.6em;
+  color: #212b36;
+  font-weight: 700;
+}
+.main__span {
+  color: #e06925;
+}
+.main__p {
+  color: #565656;
+  font-weight: 600;
+  width: 16em;
 }
 
 /*# sourceMappingURL=main.css.map */
