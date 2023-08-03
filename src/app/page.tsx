@@ -18,13 +18,15 @@ export default function Home() {
               <span className="button__text">Acceder</span>
             </LinkRoute>
           </div>
-          <Image
-            src={imageHome}
-            alt="Imagen de portada"
-            width={550}
-            height={600}
-            className="main__image"
-          />
+          <div className="main__img">
+            <Image
+              src={imageHome}
+              alt="Imagen de portada"
+              width={550}
+              height={600}
+              className="main__image"
+            />
+          </div>
         </section>
         <section className="main__description">
           {description.map(({ description, id, image }) => (

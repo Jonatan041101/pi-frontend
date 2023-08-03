@@ -7,6 +7,7 @@
   @include flex(column, nowrap, flex-start, center, 0em);
   background: $color-main;
   background: #fff;
+  padding: 0 1.5em;
 }
 .main {
   min-height: 100%;
@@ -16,31 +17,54 @@
     width: 100%;
     max-width: $max-width-section;
     @include flex(row, nowrap, space-between, center, 0);
+    @include responsive($query-landing) {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    }
   }
   &__title {
-    width: 20em;
+    width: 100%;
+    max-width: 24em;
+    margin: 6em 0 0 0;
     @include flex(column, nowrap, flex-start, flex-start, 1.5em);
+    @include responsive($query-landing) {
+      margin: 1em;
+    }
+    @include responsive(500px) {
+      & a {
+        width: 100%;
+      }
+    }
   }
   &__h1 {
-    font-size: 2.6em;
+    font-size: clamp(1.8em, 0.8em + 2.2vw, 2.6em);
     color: $color-blue;
     font-weight: 700;
   }
+
   &__span {
     color: $color-orange;
   }
+  &__img {
+    font-size: clamp(0.6em, 0.5em + 0.4vw, 1em);
+  }
   &__image {
-    // object-fit: contain;
+    width: 34.375em;
+    height: 37.5em;
   }
   &__p {
     color: $color-gray-text;
     font-weight: 600;
-    width: 16em;
+    width: 100%;
   }
   &__description {
     width: 100%;
     padding: 0 0 3.8em 0;
     max-width: $max-width-section;
-    @include flex(row, nowrap, space-between, center, 0);
+    @include flex(row, wrap, space-between, center, 0);
+    @include responsive($query-landing) {
+      justify-content: center;
+      gap: 1.5em;
+    }
   }
 }

@@ -311,6 +311,7 @@ button {
   gap: 0em;
   background: #121b22;
   background: #fff;
+  padding: 0 1.5em;
 }
 
 .main {
@@ -331,36 +332,67 @@ button {
   align-items: center;
   gap: 0;
 }
+@media screen and (max-width: 700px) {
+  .main__section {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+}
 .main__title {
-  width: 20em;
+  width: 100%;
+  max-width: 24em;
+  margin: 6em 0 0 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.5em;
 }
+@media screen and (max-width: 700px) {
+  .main__title {
+    margin: 1em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main__title a {
+    width: 100%;
+  }
+}
 .main__h1 {
-  font-size: 2.6em;
+  font-size: clamp(1.8em, 0.8em + 2.2vw, 2.6em);
   color: #212b36;
   font-weight: 700;
 }
 .main__span {
   color: #e06925;
 }
+.main__img {
+  font-size: clamp(0.6em, 0.5em + 0.4vw, 1em);
+}
+.main__image {
+  width: 34.375em;
+  height: 37.5em;
+}
 .main__p {
   color: #565656;
   font-weight: 600;
-  width: 16em;
+  width: 100%;
 }
 .main__description {
   width: 100%;
   padding: 0 0 3.8em 0;
   max-width: 1050px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   gap: 0;
+}
+@media screen and (max-width: 700px) {
+  .main__description {
+    justify-content: center;
+    gap: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
