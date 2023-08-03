@@ -1,7 +1,8 @@
 @import './mixins/mixin.scss', './variables/variables.scss',
   './reset/reset.scss', './components/header.scss', './components/button.scss',
   './components/description.scss', './components/card.scss',
-  './components/breeds.scss', './components/homepage.scss';
+  './components/input.scss', './components/breeds.scss',
+  './components/homepage.scss', './components/create.scss';
 .body {
   display: flex;
   font-family: var(--font-montserrat);

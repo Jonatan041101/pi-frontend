@@ -339,6 +339,19 @@ button {
   font-weight: 500;
 }
 
+.input {
+  background: #efefef;
+  border-radius: 0.5em;
+}
+.input__text {
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+.input__text::placeholder {
+  color: #b8b8b8;
+  font-weight: 600;
+}
+
 .breeds {
   width: 100%;
   max-width: 1100px;
@@ -351,10 +364,54 @@ button {
 
 .homepage {
   display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.homepage__nav {
+  width: 100%;
+  height: 8em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+.homepage__filters {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.create {
+  background: #212b36;
+  display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+  padding: 0.5em 1em;
+  width: 16.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.create__h3 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.create__span {
+  color: #e06925;
+}
+.create__image {
+  width: 133px;
+  height: 89px;
+  aspect-ratio: 16/9;
+  object-fit: contain;
 }
 
 .body {

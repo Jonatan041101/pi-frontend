@@ -1,0 +1,23 @@
+.create {
+  background: $color-blue;
+  @include flex(row, nowrap, center, center, 0.5em);
+  padding: 0.5em 1em;
+  width: 16.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  &__h3 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 700;
+    // width: 6em;
+  }
+  &__span {
+    color: $color-orange;
+  }
+  &__image {
+    width: 133px;
+    height: 89px;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+  }
+}

@@ -1,4 +1,12 @@
 .input {
+  background: $background-input;
+  border-radius: 0.5em;
   &__text {
+    font-size: 1.2em;
+    padding: 0.5em;
+    &::placeholder {
+      color: $color-input;
+      font-weight: 600;
+    }
   }
 }
