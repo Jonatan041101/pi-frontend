@@ -1,12 +1,13 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-height: 8em;
   color: $color-blue;
   width: 100%;
   @include flex(row, nowrap, center, center, 0);
+  position: relative;
+  height: 0;
   &__nav {
+    min-height: 8em;
+    position: absolute;
+    top: 0;
     width: 100%;
     max-width: $max-width;
     @include flex(row, nowrap, space-between, center, 0);

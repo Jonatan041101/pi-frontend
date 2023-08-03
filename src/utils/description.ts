@@ -1,11 +1,12 @@
 import { DescriptionType } from '@/types/map';
-
+export const imageTest =
+  'https://res.cloudinary.com/damjxqb5f/image/upload/v1690959368/dog.5025b11c_gsaiys.png';
+export const textTest = 'Busca a tu perro favorito';
 export const description: DescriptionType[] = [
   {
     id: 1,
-    image:
-      'https://res.cloudinary.com/damjxqb5f/image/upload/v1690959368/dog.5025b11c_gsaiys.png',
-    description: 'Busca a tu perro favorito',
+    image: imageTest,
+    description: textTest,
   },
   {
     id: 2,

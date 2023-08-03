@@ -203,10 +203,6 @@ button {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-height: 8em;
   color: #212b36;
   width: 100%;
   display: flex;
@@ -214,8 +210,13 @@ button {
   justify-content: center;
   align-items: center;
   gap: 0;
+  position: relative;
+  height: 0;
 }
 .header__nav {
+  min-height: 8em;
+  position: absolute;
+  top: 0;
   width: 100%;
   max-width: 1100px;
   display: flex;
@@ -235,6 +236,11 @@ button {
   padding: 0.5em 1em;
   border-radius: 0.5em;
   transition: 0.5s ease;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
 }
 .button:hover .button__i {
   transform: translateX(0.5em);
@@ -302,19 +308,19 @@ button {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 1em;
+  gap: 0em;
   background: #121b22;
   background: #fff;
 }
 
 .main {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  gap: 0;
+  gap: 1em;
 }
 .main__section {
   width: 100%;

@@ -3,6 +3,7 @@
   padding: 0.5em 1em;
   border-radius: 0.5em;
   transition: 0.5s ease;
+  @include flex(row, nowrap, center, center, 0.5em);
   &:hover &__i {
     transform: translateX(0.5em);
   }
