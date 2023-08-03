@@ -1,12 +1,12 @@
 .description {
-  box-shadow: 0 4px 27px 0 rgba(0, 0, 0, 0.10980392156862745);
+  box-shadow: $box-shadow;
   width: 8em;
   cursor: pointer;
   text-align: center;
   @include flex(column, nowrap, center, center, 0.3em);
   padding: 0.4em;
   &:hover {
-    box-shadow: 0 4px 27px 0 rgba(0, 0, 0, 0.20784313725490197);
+    box-shadow: $box-shadow-hover;
   }
   &__image {
     width: 4em;

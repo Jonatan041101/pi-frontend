@@ -1,0 +1,5 @@
+.breeds {
+  width: 100%;
+  max-width: $max-width;
+  @include flex(row, wrap, center, center, 0.5em);
+}

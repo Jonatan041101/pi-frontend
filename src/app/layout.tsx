@@ -2,7 +2,6 @@ import './globals.css';
 import '@/css/main.css';
 import type { Metadata } from 'next';
 import { Montserrat, Nunito } from 'next/font/google';
-import { Roboto } from 'next/font/google';
 
 const montserrat = Montserrat({
   subsets: ['latin'],

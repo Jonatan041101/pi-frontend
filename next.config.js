@@ -6,6 +6,7 @@ const nextConfig = {
         hostname: 'res.cloudinary.com',
         protocol: 'https',
       },
+      { hostname: 'cdn2.thedogapi.com', protocol: 'https' },
     ],
   },
 };
