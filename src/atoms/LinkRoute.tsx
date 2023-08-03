@@ -8,11 +8,21 @@ interface Props {
   children: React.ReactNode;
   href: Routes;
   icon?: IconTypes;
-  background: BackgroundColorBtn;
+  background?: BackgroundColorBtn;
+  nonStyles?: boolean;
 }
-export default function LinkRoute({ children, href, background, icon }: Props) {
+export default function LinkRoute({
+  children,
+  href,
+  background,
+  icon,
+  nonStyles,
+}: Props) {
   return (
-    <Link href={href} className={`${background} button `}>
+    <Link
+      href={href}
+      className={`${background} ${nonStyles ? '' : 'button'}  `}
+    >
       {children}
       {icon && (
         <i className="button__i">

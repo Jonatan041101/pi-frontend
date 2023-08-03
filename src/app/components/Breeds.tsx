@@ -11,6 +11,7 @@ export default async function BreedsComponent() {
     <section className="breeds">
       {breeds.map((breed) => (
         <Card
+          id={breed.id}
           key={breed.id}
           image={breed.image}
           name={breed.name}
